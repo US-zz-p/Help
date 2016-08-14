@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Maintenance</title>
+	</head>
+	<body>
+		<h1>Maintenance</h1>
+
+		<h2>Cookies</h2>
+		<ul>
+			<p>{{ request.cookies }}</p>
+			{% for key, value in request.cookies.items() %}
+			<li>{{ key }} - {{ value }}</li>
+			{% endfor %}
+		</ul>
+
+		<h2>Session</h2>
+		<ul>
+			<p>{{ session }}</p>
+			{% for key, value in session.items() %}
+			<li>{{ key }} - {{ value }}</li>
+			{% endfor %}
+		</ul>
+
+		<p>&nbsp;</p>
+		<h2>Screenshots</h2>
+
+		<h3>Running on: <a href="http://0.0.0.0:5001/">http://0.0.0.0:5001/</a></h3>
+		<p><img src="{{ url_for('static', filename='img/1.png') }}" /><p>
+
+		<h3>Running on: <a href="http://myapp.dev:5001/">http://myapp.dev:5001/</a></h3>
+		<p><img src="{{ url_for('static', filename='img/2.png') }}" /><p>
+
+		<h3>/etc/hosts:</h3>
+		<p><img src="{{ url_for('static', filename='img/3.png') }}" /><p>
+
+		</body>
+</html>

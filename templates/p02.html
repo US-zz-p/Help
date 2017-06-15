@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/vue2.css') }}">
+<div class="main">
+	<h1>Vue Tests 2</h1>
+
+	<div id="VPUdtEf3oXI">
+		Print 1: [[ randn ]] <br />
+		<div v-text="Math.random() * 100"></div>
+		<button v-on:click="counter += 1">Add [[ counter ]]</button>
+
+		<button v-on:click="greet()">Toggle</button>
+		<div v-if="onOff">ON</div>
+		<div v-if="!onOff">OFF</div>
+
+		<div class="box" v-bind:style="styleBox()"></div>
+		<div class="box" v-bind:class="{ bred: onOff, bblue: !onOff }"></div>
+		Choose a Color: <input type="text" v-model="keyword" /> [[ keyword ]]
+		<div class="box" v-bind:style="{'background-color': keyword}"></div>
+
+		<div class="vue2">
+			<div class="search-wrapper">
+				<input type="text" v-model="search" placeholder="Search Title..." />
+				<label>Search Title</label>
+			</div>
+
+			<div class="wrapper">
+				<div class="card" v-for="post in filteredList">
+					<a v-bind:href="post.link" target="_blank">
+						<img v-bind:src="post.img" alt="post.title" />
+						<small>Posted by [[ post.author ]]</small>
+						[[ post.title ]]
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<br />
+	<a href="{{ url_for('p01') }}">Previous Vue</a> - <a href="{{ url_for('p03') }}">Next Vue</a>
+</div>
+<script type=text/javascript src="{{ url_for('static', filename='vue/p02.vue') }}"></script>
+{% endblock %}

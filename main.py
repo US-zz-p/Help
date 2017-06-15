@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template, make_response  # request, redirect, session, url_for
-from flask_wtf import CsrfProtect
+from flask_wtf import CSRFProtect
 
 app = Flask(__name__)
 app.config.from_pyfile('config.cfg')
 
-csrf = CsrfProtect()
+csrf = CSRFProtect()
 csrf.init_app(app)
 
 

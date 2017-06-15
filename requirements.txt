@@ -1,0 +1,16 @@
+click==6.7
+Flask==0.12.2
+get==0.0.20
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+post==0.0.12
+public==0.0.38
+query-string==0.0.11
+request==0.0.12
+setupfiles==0.0.49
+simplejson==3.10.0
+uWSGI==2.0.15
+uwsgitop==0.10
+Werkzeug==0.12.2
+Flask-WTF==0.14.2

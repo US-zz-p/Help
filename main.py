@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 
+# https://github.com/USP/Help
+# https://usp.herokuapp.com/
+
+# https://dashboard.heroku.com/apps/usp/activity
+# https://dashboard.heroku.com/apps/usp/logs
+
 from flask import Flask, render_template, make_response  # request, redirect, session, url_for
 from flask_wtf import CSRFProtect
 

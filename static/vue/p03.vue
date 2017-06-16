@@ -1,6 +1,5 @@
-var VPUdtEf3oXI = new Vue({
-  el: '#VPUdtEf3oXI', delimiters: ['[[', ']]'],
-	data: {
-		randn: Math.random(),
-    }
-}).mount;
+var p03 = new Vue({
+	el: '#p03', delimiters: ['[[', ']]'],
+	data: { randn: Math.random(),
+	},
+});

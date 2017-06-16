@@ -2,6 +2,9 @@
 
 from flask import Flask, render_template, make_response  # request, redirect, session, url_for
 from flask_wtf import CSRFProtect
+from werkzeug.http import http_date
+# from functools import wraps, update_wrapper
+from datetime import datetime
 
 app = Flask(__name__)
 app.config.from_pyfile('config.cfg')
@@ -38,6 +41,20 @@ def p04():
     resp.set_cookie('cookie1', 'value of cookie1')
     resp.set_cookie('sessionID', '', expires=0)
     return resp
+
+
+# from flask_cache import Cache
+# app.config['CACHE_TYPE'] = 'null'
+# cache = Cache(app,config={'CACHE_TYPE': 'null'})
+
+
+@app.after_request
+def add_header(r):
+    r.headers['Cache-Control'] = 'public, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0'
+    r.headers['Last-Modified'] = http_date(datetime.now())
+    r.headers['Pragma'] = 'no-cache'
+    r.headers['Expires'] = '0'
+    return r
 
 
 if __name__ == '__main__':

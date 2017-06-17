@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='usp',
-    version='0.1.dev0',
+    version='0.1.dev1',
     url='https://usp.herokuapp.com/',
     author='John Robson',
     author_email='john.robson@usp.br',

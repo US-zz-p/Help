@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, session, g # render_template, make_response, session, g  # request, redirect, url_for
+from flask_wtf import CSRFProtect
 # from functools import wraps, update_wrapper
-# from flask_wtf import CSRFProtect
+
 
 app = Flask(__name__)
 app.config.from_pyfile('config.cfg')
 
-import usp.views
+csrf = CSRFProtect()
+csrf.init_app(app)
 
-# csrf = CSRFProtect()
-# csrf.init_app(app)
+import usp.main.requests
+import usp.main.views
+# from tests.view_decorator import *
 
 ################################################################################
 
@@ -22,9 +25,6 @@ import usp.views
 # def index():
 
 ################################################################################
-
-# import tests.requests
-# from tests.view_decorator import *
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001)

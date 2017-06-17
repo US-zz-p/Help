@@ -1,7 +1,7 @@
 from flask import session, g
 from werkzeug.http import http_date
 from datetime import datetime
-from main import app
+from usp import app
 
 
 @app.before_request

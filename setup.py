@@ -3,13 +3,25 @@ from setuptools import setup, find_packages
 setup(
     name='usp',
     version='0.1.dev1',
-    url='https://usp.herokuapp.com/',
+    license='AGPLv3',
     author='John Robson',
     author_email='john.robson@usp.br',
-    description='Flask Tests',
+    url='https://usp.herokuapp.com/',
+    description=('Flask Tests'),
+    long_description='README',
     packages=find_packages(),
+    install_requires=[
+        'flask',
+        'uwsgi',
+    ],
+    classifiers=[
+        'Development Status :: 2 - Pre-Alpha',
+        'Intended Audience :: Developers',
+        'Intended Audience :: Education',
+        'Programming Language :: Python',
+    ],
     include_package_data=True,
-    install_requires=['flask', ],
+    zip_safe=False,
 )
 
 # https://docs.google.com/presentation/d/1-g0UYgV72jwtyeFLHYqz0Sh56VSiCiGHn5Bu3TW2hUM/
@@ -28,3 +40,11 @@ setup(
 #          , 'static/*.png'
 #          ]
 #        }
+
+# classifiers=[
+
+# https://github.com/mitodl/lmod_proxy/blob/master/setup.py
+# test_suite="lmod_proxy.tests",
+# tests_require=tests_require,
+# cmdclass={"test": PyTest},
+# zip_safe=False,

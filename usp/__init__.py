@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+__project__ = 'usp'
+__version__ = '0.1.dev1'
+
+
 from flask import Flask, session, g # render_template, make_response, session, g  # request, redirect, url_for
 from flask_wtf import CSRFProtect
 # from functools import wraps, update_wrapper
@@ -25,6 +29,7 @@ import usp.main.views
 # def index():
 
 ################################################################################
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001)

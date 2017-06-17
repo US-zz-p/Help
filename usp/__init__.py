@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from flask import Flask # render_template, make_response, session, g  # request, redirect, url_for
+from flask import Flask, session, g # render_template, make_response, session, g  # request, redirect, url_for
 # from functools import wraps, update_wrapper
 # from flask_wtf import CSRFProtect
 

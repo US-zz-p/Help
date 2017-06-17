@@ -33,7 +33,7 @@ header .logo:hover {
 * Centering the body content
 */
 .container {
-	width: 1200px;
+	width: 800px;
 	margin: 0 auto;
 	background-color: #E6E6FA;
 	border-radius: 6px;

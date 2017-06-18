@@ -1,3 +1,4 @@
+import sys
 from setuptools import setup, find_packages
 
 setup(
@@ -48,3 +49,8 @@ setup(
 # tests_require=tests_require,
 # cmdclass={"test": PyTest},
 # zip_safe=False,
+
+
+if __name__ == '__main__':
+    setup()
+    sys.exit(0)

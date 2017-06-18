@@ -4,8 +4,8 @@
 
 """
 
-import useful_1
-import useful_2
+from . import useful_1
+from . import useful_2
 
 
 def start():

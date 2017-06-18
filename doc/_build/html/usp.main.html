@@ -1,0 +1,216 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>usp.main package &#8212; USP 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="usp-main-package">
+<h1>usp.main package<a class="headerlink" href="#usp-main-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-usp.main.requests">
+<span id="usp-main-requests-module"></span><h2>usp.main.requests module<a class="headerlink" href="#module-usp.main.requests" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="usp.main.requests.add_header">
+<code class="descclassname">usp.main.requests.</code><code class="descname">add_header</code><span class="sig-paren">(</span><em>r</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/requests.html#add_header"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.requests.add_header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="usp.main.requests.load_user">
+<code class="descclassname">usp.main.requests.</code><code class="descname">load_user</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/requests.html#load_user"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.requests.load_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-usp.main.view_decorator">
+<span id="usp-main-view-decorator-module"></span><h2>usp.main.view_decorator module<a class="headerlink" href="#module-usp.main.view_decorator" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="usp.main.view_decorator.UserAPI">
+<em class="property">class </em><code class="descclassname">usp.main.view_decorator.</code><code class="descname">UserAPI</code><a class="reference internal" href="_modules/usp/main/view_decorator.html#UserAPI"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.view_decorator.UserAPI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">flask.views.MethodView</span></code></p>
+<dl class="method">
+<dt id="usp.main.view_decorator.UserAPI.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>user_id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/view_decorator.html#UserAPI.delete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.view_decorator.UserAPI.delete" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="usp.main.view_decorator.UserAPI.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>user_id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/view_decorator.html#UserAPI.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.view_decorator.UserAPI.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="usp.main.view_decorator.UserAPI.methods">
+<code class="descname">methods</code><em class="property"> = [‘DELETE’, ‘GET’, ‘POST’, ‘PUT’]</em><a class="headerlink" href="#usp.main.view_decorator.UserAPI.methods" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="usp.main.view_decorator.UserAPI.post">
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/view_decorator.html#UserAPI.post"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.view_decorator.UserAPI.post" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="usp.main.view_decorator.UserAPI.put">
+<code class="descname">put</code><span class="sig-paren">(</span><em>user_id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/view_decorator.html#UserAPI.put"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.view_decorator.UserAPI.put" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="usp.main.view_decorator.abort">
+<code class="descclassname">usp.main.view_decorator.</code><code class="descname">abort</code><span class="sig-paren">(</span><em>error</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/view_decorator.html#abort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.view_decorator.abort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="usp.main.view_decorator.cls_decorator">
+<code class="descclassname">usp.main.view_decorator.</code><code class="descname">cls_decorator</code><span class="sig-paren">(</span><em>Cls</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/view_decorator.html#cls_decorator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.view_decorator.cls_decorator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="usp.main.view_decorator.login_check">
+<code class="descclassname">usp.main.view_decorator.</code><code class="descname">login_check</code><span class="sig-paren">(</span><em>f</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/view_decorator.html#login_check"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.view_decorator.login_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="usp.main.view_decorator.page_not_found">
+<code class="descclassname">usp.main.view_decorator.</code><code class="descname">page_not_found</code><span class="sig-paren">(</span><em>e</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/view_decorator.html#page_not_found"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.view_decorator.page_not_found" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="usp.main.view_decorator.register_api">
+<code class="descclassname">usp.main.view_decorator.</code><code class="descname">register_api</code><span class="sig-paren">(</span><em>view</em>, <em>endpoint</em>, <em>url</em>, <em>pk=’id’</em>, <em>pk_type=’int’</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/view_decorator.html#register_api"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.view_decorator.register_api" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-usp.main.views">
+<span id="usp-main-views-module"></span><h2>usp.main.views module<a class="headerlink" href="#module-usp.main.views" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="usp.main.views.index">
+<code class="descclassname">usp.main.views.</code><code class="descname">index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/views.html#index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.views.index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="usp.main.views.p01">
+<code class="descclassname">usp.main.views.</code><code class="descname">p01</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/views.html#p01"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.views.p01" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="usp.main.views.p02">
+<code class="descclassname">usp.main.views.</code><code class="descname">p02</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/views.html#p02"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.views.p02" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="usp.main.views.p03">
+<code class="descclassname">usp.main.views.</code><code class="descname">p03</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/views.html#p03"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.views.p03" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="usp.main.views.p04">
+<code class="descclassname">usp.main.views.</code><code class="descname">p04</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/usp/main/views.html#p04"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#usp.main.views.p04" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-usp.main">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-usp.main" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">usp.main package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-usp.main.requests">usp.main.requests module</a></li>
+<li><a class="reference internal" href="#module-usp.main.view_decorator">usp.main.view_decorator module</a></li>
+<li><a class="reference internal" href="#module-usp.main.views">usp.main.views module</a></li>
+<li><a class="reference internal" href="#module-usp.main">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/usp.main.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, John Robson.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/usp.main.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

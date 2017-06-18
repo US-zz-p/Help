@@ -18,7 +18,7 @@
 from flask import render_template, make_response, g
 from flask.views import MethodView
 from functools import wraps
-from main import app
+from usp import app
 
 
 @app.errorhandler(404)

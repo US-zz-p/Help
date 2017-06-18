@@ -1,4 +1,4 @@
-import sys
+import sys, os
 from setuptools import setup, find_packages
 
 setup(
@@ -52,5 +52,8 @@ setup(
 
 
 if __name__ == '__main__':
-    setup()
-    sys.exit(0)
+    try:
+        setup()
+        sys.exit(0)
+    except SystemExit as e:
+        os._exit(0)

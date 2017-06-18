@@ -12,14 +12,6 @@ usp\.test\_sphinx\.useful\_1 module
     :undoc-members:
     :show-inheritance:
 
-usp\.test\_sphinx\.useful\_2 module
------------------------------------
-
-.. automodule:: usp.test_sphinx.useful_2
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 
 Module contents
 ---------------

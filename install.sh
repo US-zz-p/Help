@@ -5,7 +5,7 @@ export FLASK_DEBUG=1
 cd sphinx
 sphinx-apidoc -o . -f ..
 sphinx-build -b html . /tmp/sphinx # make html
-ln -sf /tmp/sphinx ../usp/static/doc
+# ln -sf /tmp/sphinx ../usp/static/doc
 
 cd ..
 pip install --no-cache-dir --upgrade -e .

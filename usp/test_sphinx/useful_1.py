@@ -109,3 +109,6 @@ class MyPublicClass(object):
 
         """
         return baz
+
+
+print('Useful 1')

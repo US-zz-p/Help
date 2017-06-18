@@ -10,3 +10,6 @@ import useful_2
 
 def start():
     "This starts this module running ..."
+
+
+print('Main')

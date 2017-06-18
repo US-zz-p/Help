@@ -1,4 +1,4 @@
-from flask import render_template, make_response, session, g  # request, redirect, url_for
+from flask import render_template, make_response # session, g  # request, redirect, url_for
 from usp import app
 
 

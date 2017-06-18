@@ -4,7 +4,7 @@ __project__ = 'usp'
 __version__ = '0.1.dev1'
 
 
-from flask import Flask, session, g # render_template, make_response, session, g  # request, redirect, url_for
+from flask import Flask # render_template, make_response, session, g  # request, redirect, url_for
 from flask_wtf import CSRFProtect
 # from functools import wraps, update_wrapper
 

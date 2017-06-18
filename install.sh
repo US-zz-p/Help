@@ -4,8 +4,10 @@ export FLASK_DEBUG=1
 # creating docs
 cd doc
 sphinx-apidoc -o . -f ..
-make html
+sphinx-build -b html . /tmp/sphinx # make html
+ln -sf /tmp/sphinx ../usp/static/doc
 
+cd ..
 pip install --no-cache-dir --upgrade -e .
 # pip install --no-cache-dir --upgrade --force-reinstall -e .
 # pip install --upgrade -e . # --no-binary -v

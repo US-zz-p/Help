@@ -11,6 +11,7 @@ from flask_wtf import CSRFProtect
 
 app = Flask(__name__)
 app.config.from_pyfile('config.cfg')
+app.debug = True
 
 csrf = CSRFProtect()
 csrf.init_app(app)
@@ -32,6 +33,6 @@ import usp.main.views
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    app.run(debug=True, host='0.0.0.0', port=5005)
 
 # $ python main.py

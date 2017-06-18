@@ -1,9 +1,11 @@
 export FLASK_APP=usp
-export FLASK_DEBUG=true
+export FLASK_DEBUG=1
 
 pip install -e .
 # pip install --upgrade -e . # --no-binary -v
 
 # pip install -r requirements.txt
 
-flask run --port 5005
+flask run --host=0.0.0.0 --port=5005
+# python -m flask run
+# flask shell

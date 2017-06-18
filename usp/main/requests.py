@@ -20,7 +20,7 @@ def add_header(r):
     r.headers['Cache-Control'] = 'public, no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0'
     r.headers['Last-Modified'] = http_date(datetime.now())
     r.headers['Pragma'] = 'no-cache'
-    r.headers['Expires'] = '-1'
+    r.headers['Expires'] = '0'
     r.cache_control.max_age = 0
     r.cache_control.public = True
     return r

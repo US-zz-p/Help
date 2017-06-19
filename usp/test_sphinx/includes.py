@@ -1,5 +1,5 @@
 """
-.. include:: ../usp/test_sphinx/README
+.. include:: ../usp/test_sphinx/test.rst
 
 """
 # or :literal:

@@ -178,6 +178,7 @@ print(sys.path)
 import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# html_theme_options = {'collapse_navigation': False, 'display_version': True, 'navigation_depth': 5, }
 
 # import alabaster
 # html_theme_path = [alabaster.get_path()]
@@ -202,5 +203,6 @@ extensions.append('sphinx.ext.inheritance_diagram')
 # rst2pdf - name of the generated pdf
 # Sample rst2pdf doc - title of the pdf
 # Your Name - author name in the pdf
+
 
 autodoc_default_flags = ['members', 'undoc-members', 'private-members', 'inherited-members', 'show-inheritance'] # 'special-members'

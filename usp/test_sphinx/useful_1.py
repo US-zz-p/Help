@@ -60,6 +60,21 @@ def public_fn_with_sphinxy_docstring(name, state=None):
     .. math::
         W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
 
+
+    .. math::
+        \langle \alpha, \beta  \rangle
+        \in
+        \Biggl \lbrace
+        {
+        M,\text{ if }
+           {
+            l(\underline{x}) =
+              \frac { p(\underline{x}|M ) } { p(\underline{x}|U) }
+              \geq
+               \frac { p(U) }{ p(M) } }
+        \atop
+        U, \text{ otherwise }
+        }
     """
     return 0
 
@@ -117,7 +132,7 @@ class MyPublicClass(object):
         Formula 1: :math:`(a + b)^2 = a^2 + 2ab + b^2`
 
         Formula 2:
-        
+
         .. math::
             \sum^{+\infty}_{i = 1} \alpha^i \cdots \frac{\partial f}{\partial x}
 

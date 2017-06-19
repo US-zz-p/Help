@@ -176,7 +176,12 @@ sys.path.insert(0, os.path.abspath('..'))
 print(sys.path)
 
 # extensions.append('rst2pdf.pdfbuilder') # sphinx.ext.pngmath / jsMath
+extensions.append('matplotlib.sphinxext.only_directives')
 extensions.append('matplotlib.sphinxext.plot_directive')
+extensions.append('IPython.sphinxext.ipython_directive')
+extensions.append('IPython.sphinxext.ipython_console_highlighting')
+extensions.append('sphinx.ext.inheritance_diagram')
+# extensions.append('numpydoc')
 # pdf_documents = [('index', u'rst2pdf', u'USP Tests', u'John Robson'), ]
 
 # index - master document

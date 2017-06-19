@@ -10,7 +10,6 @@ __pycache__/
 .Python
 env/
 build/
-_build/
 develop-eggs/
 dist/
 downloads/
@@ -63,6 +62,8 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+_build/
+sphinx/
 
 # PyBuilder
 target/
@@ -88,3 +89,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+
+*.swp

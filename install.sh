@@ -3,9 +3,9 @@ export FLASK_DEBUG=1
 
 # creating docs
 cd sphinx
-sphinx-apidoc --output-dir=. --maxdepth=10 --force ..
+sphinx-apidoc --output-dir=. --maxdepth=10 --force --separate --module-first ..
 # make clean html latexpdf
-sphinx-build -a -E -b html . /tmp/usp
+sphinx-build -b html -a -E -j 1 --color . /tmp/usp
 # sphinx-build -a -E -b pdf . /tmp/usp
 # ln -sf /tmp/usp ../usp/static/doc
 

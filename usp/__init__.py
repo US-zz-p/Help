@@ -16,8 +16,9 @@ app.debug = True
 csrf = CSRFProtect()
 csrf.init_app(app)
 
-import usp.main.requests
-import usp.main.views
+import usp.util.requests
+import usp.views
+# import usp.views.decorators
 # from tests.view_decorator import *
 
 ################################################################################

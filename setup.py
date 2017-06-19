@@ -9,6 +9,7 @@ setup(
     author_email='john.robson@usp.br',
     url='https://usp.herokuapp.com/',
     description=('Flask Tests'),
+    keywords=('flask, vuejs, javascript'),
     long_description='README',
     packages=find_packages(),
     install_requires=[

@@ -6,8 +6,9 @@ Subpackages
 
 .. toctree::
 
-    usp.main
     usp.test_sphinx
+    usp.util
+    usp.views
 
 Module contents
 ---------------

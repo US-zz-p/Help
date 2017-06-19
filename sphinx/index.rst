@@ -7,7 +7,7 @@ Welcome to USP's documentation!
 ===============================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 10
    :caption: Contents:
 
 

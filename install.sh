@@ -2,10 +2,11 @@ export FLASK_APP=usp
 export FLASK_DEBUG=1
 
 # creating docs
-cd /home/user/projects/Python/Main/sphinx
+cd sphinx
 sphinx-apidoc --output-dir=. --maxdepth=10 --force ..
 # make clean html latexpdf
 sphinx-build -a -E -b html . /tmp/usp
+# sphinx-build -a -E -b pdf . /tmp/usp
 # ln -sf /tmp/usp ../usp/static/doc
 
 cd ..

@@ -10,7 +10,7 @@
 
 
 def public_fn_with_googley_docstring(name, state=None):
-    """This function does something.
+    r"""This function does something.
 
     Args:
        name (str):  The name to use.
@@ -35,12 +35,19 @@ def public_fn_with_googley_docstring(name, state=None):
 
     BTW, this always returns 0.  **NEVER** use with :class:`MyPublicClass`.
 
+    .. math::
+        :nowrap:
+
+        \begin{eqnarray}
+          y    & = & ax^2 + bx + c \\
+          f(x) & = & x^2 + 2xy + y^2
+        \end{eqnarray}
     """
     return 0
 
 
 def public_fn_with_sphinxy_docstring(name, state=None):
-    """This function does something.
+    r"""This function does something.
 
     :param name: The name to use.
     :type name: str.
@@ -48,6 +55,10 @@ def public_fn_with_sphinxy_docstring(name, state=None):
     :type state: bool.
     :returns:  int -- the return code.
     :raises: AttributeError, KeyError
+
+
+    .. math::
+        W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
 
     """
     return 0
@@ -64,18 +75,20 @@ def _private_fn_with_docstring(foo, bar='baz', foobarbas=None):
 
 
 class MyPublicClass(object):
-    """We use this as a public class example class.
+    r"""We use this as a public class example class.
 
     You never call this class before calling :func:`public_fn_with_sphinxy_docstring`.
 
-    .. note::
+    .. math::
+        W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
 
+    .. note::
        An example of intersphinx is this: you **cannot** use :mod:`pickle` on this class.
 
     """
 
     def __init__(self, foo, bar='baz'):
-        """A really simple class.
+        r"""A really simple class.
 
         Args:
            foo (str): We all know what foo does.
@@ -88,7 +101,7 @@ class MyPublicClass(object):
         self._bar = bar
 
     def get_foobar(self, foo, bar=True):
-        """This gets the foobar
+        r"""This gets the foobar
 
         This really should have a full function definition, but I am too lazy.
 
@@ -99,7 +112,37 @@ class MyPublicClass(object):
 
         Isn't that what you want?
 
+        Since Pythagoras, we know that: :math:`a^2 + b^2 = c^2`.
+
+        Formula 1: :math:`(a + b)^2 = a^2 + 2ab + b^2`
+
+        Formula 2:
+        
+        .. math::
+            \sum^{+\infty}_{i = 1} \alpha^i \cdots \frac{\partial f}{\partial x}
+
+        Formula 3:
+
+        .. math::
+            (a + b)^2  &=  (a + b)(a + b) \\
+                        &=  a^2 + 2ab + b^2
+
+        Formula 4: :math:`\sum^{+\infty}_{i = 1} \alpha^i \cdots \frac{\partial f}{\partial x}`
+
+        Formula 5:
+
+        .. math::
+            e^{i\pi} + 1 = 0
+            :label: euler
         """
+
+        "Comment above the line"
+        self.test = 'test'  # commenting this line
+
+        """ commenting return """
+        self.test2 = 'test2'
+
+        ''' another comment '''
         return foo + bar
 
     def _get_baz(self, baz=None):
@@ -109,6 +152,11 @@ class MyPublicClass(object):
 
         """
         return baz
+
+    def test1(self):
+        """
+        Euler's identity, equation :eq:`euler`, was elected one of the most beautiful mathematical formulas.
+        """
 
 
 print('Useful 1')

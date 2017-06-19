@@ -202,3 +202,5 @@ extensions.append('sphinx.ext.inheritance_diagram')
 # rst2pdf - name of the generated pdf
 # Sample rst2pdf doc - title of the pdf
 # Your Name - author name in the pdf
+
+autodoc_default_flags = ['members', 'undoc-members', 'private-members', 'inherited-members', 'show-inheritance'] # 'special-members'

@@ -175,6 +175,20 @@ import os, sys
 sys.path.insert(0, os.path.abspath('..'))
 print(sys.path)
 
+import sphinx_rtd_theme
+html_theme = "sphinx_rtd_theme"
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+# import alabaster
+# html_theme_path = [alabaster.get_path()]
+# extensions = ['alabaster']
+# html_theme = 'alabaster'
+# html_sidebars = {'**': ['about.html', 'navigation.html', 'relations.html', 'searchbox.html', 'donate.html', ]}
+
+# import sphinx_bootstrap_theme
+# html_theme = 'bootstrap'
+# html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+
 # extensions.append('rst2pdf.pdfbuilder') # sphinx.ext.pngmath / jsMath
 extensions.append('matplotlib.sphinxext.only_directives')
 extensions.append('matplotlib.sphinxext.plot_directive')
